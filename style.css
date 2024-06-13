@@ -35,12 +35,11 @@ nav ul {
 }
 
 nav a {
-  padding: 0px 5px;
-  margin-left: 40px;
+  margin-left: 30px;
   float: left;
   color: #0b0b0b;
   text-align: center;
-  padding: 14px 26px;
+  padding: 10px 10px 12px 10px;
   text-decoration: none;
   font-size: 17px;
   text-transform: uppercase;
@@ -48,9 +47,9 @@ nav a {
   /* text-transform: lowercase; */
 }
 
-nav a:hover {
+/* nav a:hover {
   color: rgb(68, 35, 201);
-}
+} */
 
 nav li:last-child {
   float: right;
@@ -179,7 +178,7 @@ td {
   background: rgb(226, 228, 255);
 }
 
-/* CSS */
+/*cool CSS button i found on the internet woohoo*/
 .btn-container {
   display: flex;
   justify-content: center;
@@ -251,4 +250,27 @@ td {
   left: 0;
   top: 0;
   border-radius: 10px;
+}
+
+/* //// cool style for nav elements, that i totally figured out by myself//// */
+a {
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover {
+  background-size: 0 3px, 100% 3px;
 }
