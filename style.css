@@ -35,12 +35,11 @@ nav ul {
 }
 
 nav a {
-  padding: 0px 5px;
-  margin-left: 40px;
+  margin-left: 30px;
   float: left;
   color: #0b0b0b;
   text-align: center;
-  padding: 14px 26px;
+  padding: 10px 10px 12px 10px;
   text-decoration: none;
   font-size: 17px;
   text-transform: uppercase;
@@ -48,9 +47,9 @@ nav a {
   /* text-transform: lowercase; */
 }
 
-nav a:hover {
+/* nav a:hover {
   color: rgb(68, 35, 201);
-}
+} */
 
 nav li:last-child {
   float: right;
@@ -152,4 +151,126 @@ img {
   height: 100%;
   vertical-align: middle;
   border-radius: 3px;
+}
+
+/* /////////////// SPECS ////////////////// */
+
+table {
+  margin: 30px auto;
+}
+
+tr > td:first-child {
+  background: rgb(12, 0, 100);
+  color: #fff;
+}
+th {
+  background: rgb(255, 132, 0);
+  color: #fff;
+  padding: 10px 15px;
+
+  text-align: center;
+  /* text-transform: capitalize; */
+}
+td {
+  padding: 10px 15px;
+  text-align: center;
+  color: #0c0c0c;
+  background: rgb(226, 228, 255);
+}
+
+/*cool CSS button i found on the internet woohoo*/
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* //// cool style for nav elements, that i totally figured out by myself//// */
+a {
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover {
+  background-size: 0 3px, 100% 3px;
 }
