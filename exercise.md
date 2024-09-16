@@ -4,16 +4,14 @@ Your task is to make the CSS for this website. It consists of three pages that e
 
 - Make the Laptop emoji bigger (!)
 
-- Give the table of the laptop specs a nice styling (background-color is alternating between the rows, more spacing between the entries)
-- Make the "buy laptop here" link look like a fancy button
-- Add a hover effect to your links
-
 - Create a contact form on one of your three pages
-
 - Make everything responsive ‼! nav footer pictures and text
 
 #Done:
 
+- Add a hover effect to your links
+- Give the table of the laptop specs a nice styling (background-color is alternating between the rows, more spacing between the entries)
+- Make the "buy laptop here" link look like a fancy button
 - Tidy up the image gallery by placing three images next to each other (3x3). You can use grid or flexbox 💪 (did weird with ul li, find easier way to do it)
 - Make the images responsive for smaller screens (not a 3x3 placement anymore)
 - Give all of the images a reasonable size
